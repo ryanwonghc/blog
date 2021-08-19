@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://ryanwong.github.io/"
+baseURL = ""
 title = "Ryan Wong"
 theme = "bookworm"
 # post pagination
