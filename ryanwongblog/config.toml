@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = ""
+baseURL = "/"
 title = "Ryan Wong"
 theme = "bookworm"
 # post pagination
