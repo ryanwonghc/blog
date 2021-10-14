@@ -11,6 +11,5 @@ social:
   link: "https://www.linkedin.com/in/ryan-wong-hc/"
 ---
 
-Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis.
-
-Purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis.
+I work on the data team at Robinhood;
+In my free time you'll catch me playing sports, strategy games, or going down wikipedia rabbit holes.
