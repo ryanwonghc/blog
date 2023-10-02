@@ -1,7 +1,7 @@
 ---
 title: "About"
 layout: "about"
-image: "images/author_image.jpg"
+image: "images/author/Ryan_Wong_Pro.png"
 draft: false
 
 #caption
