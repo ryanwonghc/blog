@@ -1,6 +1,6 @@
 ---
 title: "Ryan Wong"
-image: "images/author/Ryan_Wong_Pro.jpg"
+image: 
 email: "ryanwonghc55@gmail.com"
 date: 2021-02-02T10:20:19+06:00
 draft: false
