@@ -6,10 +6,10 @@
 
       {{ with .Params.image }}
       <div class="col-lg-10 mb-5">
-        <p align="center" width="100%">
+        <div class="row justify-content-center">
           <img loading="lazy" class="img-fluid rounded" src="{{. | relURL}}" alt="">
-        </p>
-      </div>
+        </div>
+      </div>    
       {{ end }}
 
       <div class="col-lg-8 text-center">
