@@ -7,7 +7,7 @@ draft: false
 #caption
 caption:
   enable: true
-  title: "I’m Ryan Wong, a data scientist based in California."
+  title: "Hi, I'm Ryan."
 
 # social
 social:
@@ -37,4 +37,4 @@ what_i_do:
     description: "I enjoy building systems to increase my productivity and hold myself accountable for my progress."
  
 ---
-I am a proponent of data driven decision making and am passionate about using statistical and predictive analytics in order to extract meaning from data and improve the efficiency of complex processes.
+I am a graduate from the University of Michigan with a major in Industrial and Operations Engineering and a minor in Computer Science. I am a proponent of data driven decision making to solve dynamic problems and enjoy improving the efficiency of complex processes and systems.
