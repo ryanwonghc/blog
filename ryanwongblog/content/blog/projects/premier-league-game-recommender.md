@@ -2,7 +2,7 @@
 title: "Premier League Game Recommender"
 description: "Project aims to explore what factors makes a Premier League game is memorable/worth watching and generate a list of recommended Premier League games to watch."
 image: "images/post/premier_league/preview.jpg"
-date: 2020-07-14
+date: 2022-07-14
 draft: false
 author: "Ryan Wong"
 tags: ["Classification", "Python", "Web Scraping"]
