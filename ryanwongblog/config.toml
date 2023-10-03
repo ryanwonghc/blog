@@ -82,7 +82,7 @@ search = true
 # main section
 mainSections = ["blog"]
 # copyright
-copyright = "© Ryan Wong {year}. All Rights Reserved."
+copyright = "© Ryan Wong"
 
 # Preloader
 [params.preloader]

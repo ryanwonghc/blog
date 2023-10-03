@@ -35,7 +35,7 @@
           {{end}}
         </ul>
         {{ with site.Params.copyright }}
-        <p class="mb-0 font-weight-500 copyright-text content">Testing {{ now.Year }}{{.| markdownify}}</p>
+        <p class="mb-0 font-weight-500 copyright-text content">{{.| markdownify}} {{ now.Year }}. All Rights Reserved.</p>
         {{ end }}
       </div>
     </div>
