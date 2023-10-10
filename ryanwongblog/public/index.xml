@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ryan Wong</title>
+    <link>/</link>
+    <description>Recent content on Ryan Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FIFA Playlist Analysis</title>
+      <link>/blog/visualizations/fifa-playlist/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/visualizations/fifa-playlist/</guid>
+      <description>Overview Link to Github Repository</description>
+    </item>
+    
+    <item>
+      <title>Premier League Game Recommender</title>
+      <link>/blog/projects/premier-league-game-recommender/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/projects/premier-league-game-recommender/</guid>
+      <description>Project aims to explore what factors makes a Premier League game is memorable/worth watching and generate a list of recommended Premier League games to watch.</description>
+    </item>
+    
+    <item>
+      <title>Summer Olympics</title>
+      <link>/blog/visualizations/summer-olympics/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/visualizations/summer-olympics/</guid>
+      <description>This post seeks to explore and visualize trends with summer olympics data.</description>
+    </item>
+    
+    <item>
+      <title>Ryan Wong</title>
+      <link>/author/ryan-wong/</link>
+      <pubDate>Tue, 02 Feb 2021 10:20:19 +0600</pubDate>
+      
+      <guid>/author/ryan-wong/</guid>
+      <description>I have experience working as a trader at Flow Traders and as a Data Scientist at Robinhood; In my free time you&amp;rsquo;ll catch me playing sports, strategy games, or going down wikipedia rabbit holes.</description>
+    </item>
+    
+    <item>
+      <title>App Store Game Ratings</title>
+      <link>/blog/projects/app-store-game-ratings/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/projects/app-store-game-ratings/</guid>
+      <description>Project aims to predict the app store rating of a mobile game using linear regression, considering factors such as game size, genre, and price.</description>
+    </item>
+    
+    <item>
+      <title>Search Result</title>
+      <link>/search/</link>
+      <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
+      
+      <guid>/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I am a graduate from the University of Michigan with a major in Industrial and Operations Engineering and a minor in Computer Science.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elements</title>
+      <link>/elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/elements/</guid>
+      <description>Heading example Here is example of hedings.</description>
+    </item>
+    
+    <item>
+      <title>No Search Found</title>
+      <link>/404/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/404/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terms And Conditions</title>
+      <link>/terms-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/terms-conditions/</guid>
+      <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+  </channel>
+</rss>

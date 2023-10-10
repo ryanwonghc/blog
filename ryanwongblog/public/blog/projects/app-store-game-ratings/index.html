@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>App Store Game Ratings</title>
+
+  <meta name="author" content="Themefisher">
+  <meta name="description" content=" Project aims to predict the app store rating of a mobile game using linear regression, considering factors such as game size, genre, and price. ">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+
+  <!-- CSS Plugins -->
+  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&amp;display=swap">
+
+
+
+
+<link rel="stylesheet" href="/css/vendor.min.f38e7c7e6ab34c94774fb608f1bb6b5912854002ca41fa9c63fd334fcddbd97e26be4783c0f6fd40b8fc78776c7169352bbc43ccfa6f56de22009e059d7401e1.css" integrity="sha512-8458fmqzTJR3T7YI8btrWRKFQALKQfqcY/0zT83b2X4mvkeDwPb9QLj8eHdscWk1K7xDzPpvVt4iAJ4FnXQB4Q==" media="screen">
+
+</head>
+
+<body>
+  
+  <div class="header-height-fix"></div>
+<header class="header-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+          <a class="navbar-brand font-weight-bold mr-0" href="/">
+            
+            <img loading="lazy" src="/images/logo.png" alt="Ryan Wong" height="35px">
+            
+          </a>
+
+          
+          <button class="search-toggle d-inline-block d-lg-none ml-auto mr-3" data-toggle="search" aria-label="Search Toggle">
+            <i class="las la-search"></i>
+          </button>
+          
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navHeader" aria-controls="navHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="d-inline lab la-buromobelexperte"></i>
+            <i class="d-none las la-times"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navHeader">
+            <ul class="navbar-nav mx-auto">
+
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/projects">Projects</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/visualizations">Visualizations</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              
+              
+            </ul>
+            
+            
+            <div class="navbar-right d-none d-lg-inline-block">
+              <ul class="social-links list-unstyled list-inline">
+                <li class="list-inline-item ml-4 d-none d-lg-inline-block">
+                  <button class="search-toggle" data-toggle="search" aria-label="Search Toggle">
+                    <i class="las la-search"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="search-block">
+  <div data-toggle="search-close">
+    <i class="las la-times text-primary"></i>
+  </div>
+  <form action="/search">
+    <input id="search-query" name="s" type="search" placeholder="Type words &amp; hit enter" class="text-center" aria-label="search-query">
+  </form>
+</div>
+
+  
+  
+
+
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="text-center mb-5">
+          <h3 class="h2 mb-4 post-title">App Store Game Ratings</h3>
+          <ul class="card-meta list-inline">
+            <li class="list-inline-item">
+              <a href="#!" class="card-meta-author">
+                
+                <a href="/author/ryan-wong/" class="card-meta-author">
+                  <img loading="lazy" src="/images/author/ryan_pro.jpg" alt="Ryan Wong">
+                  <span>Ryan Wong</span>
+                </a>
+                
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">
+              <span>20 April 2020</span>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="mb-5 text-center">
+          <img loading="lazy" class="img-fluid rounded" src="/images/post/app_store_rating/preview.jpg" alt="Image not Found">
+        </div>
+        
+
+        <div class="content">
+          <p>Project aims to predict the app store rating of a mobile game using linear regression, considering factors such as game size, genre, and price.</p>
+<p><a href="https://github.com/ryanwonghc/regression-mobile-games">Link to Github Repository</a></p>
+<h2 id="data-cleaning">Data Cleaning</h2>
+<ul>
+<li>
+<p>I used <a href="https://www.kaggle.com/tristan581/17k-apple-app-store-strategy-games">mobile strategy games dataset</a> from Kaggle to train and test my model. The dataset contained data on 16,847 different games. I performed data cleaning to extract data that I felt would be beneficial to train the model with and eliminate data that I deemed irrelevant to the model. I made the following changes:</p>
+</li>
+<li>
+<p>Removed all entries without user rating data</p>
+</li>
+<li>
+<p>Removed all entries with less than 100 user ratings to ensure that the ratings are credible (the higher volume of ratings the more likely they are a true representative of consumer opinion)</p>
+</li>
+</ul>
+<p>I then added the following columns:</p>
+<ul>
+<li>Subtitle (y/n): an indicator variable describing whether or not the game had a subtitle.</li>
+<li>In-app purchases: in-app purchases range in price from $0 to $99.99. I grouped games into 4 quadrants by price:
+<ul>
+<li>$0 - $24.99</li>
+<li>$25 - $49.99</li>
+<li>$50 - 74.99</li>
+<li>$75 - $99.99</li>
+</ul>
+</li>
+<li>Number of words in description</li>
+<li>Age Rating: in the original dataset, there are 4 possible values for this column- 4+, 9+, 12+, and 17+. It is important to note that 9+, 12+, and 17+ games are also 4+ games, 12+ and 17+ games are also 9+ games, and 17+ games are also 12+ games. Thus, when creating indicator variables, I decided to make the categories &lsquo;&lt; 9&rsquo;, &lsquo;&lt; 12&rsquo;, and &lsquo;&lt; 17&rsquo;. 4+ games satisfy &lt; 9, 4+ and 9+ games satisfy &lt; 12, 4+, 9+, and 12+ games satisfy &lt; 17, while 17+ games do not satisfy any of the categories.</li>
+<li>Number of languages the game is offered in</li>
+<li>Size of game (in bytes)</li>
+<li>Genre: I created indicator variables for each possible game classification genre (there are 35 in total, examples include &ldquo;Education&rdquo;, &ldquo;Finance&rdquo;, and &ldquo;Lifestyle&rdquo;; I disregarded the &ldquo;Game&rdquo; genre because all data entries were marked with the &ldquo;Game&rdquo; genre.</li>
+<li>Time since last update (in days, as of April 20, 2020)</li>
+</ul>
+<p>After completing the data cleaning step of the project, I ended up with data from 2982 unique games to train and test my model with.</p>
+<h2 id="model-building-and-performance">Model Building and Performance</h2>
+<p>I split the data into training and testing sets (50/50 split). I built the model using multiple linear regression and evaluated it using R-squared and Mean Absolute Error. I used the R-squared value to evaluate how accurately my model is able to predict mobile game ratings. I chose to use MAE to evaluate my model because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.</p>
+<p>The model has an R-squared value of 0.1678 and a Mean Absolute Error of 0.37.</p>
+<h2 id="findings">Findings</h2>
+<p>I used this <a href="https://medium.com/@mayankshah_85820/machine-learning-feature-selection-with-backward-elimination-955894654026">backward elimination tutorial</a> to perform backward elimination on the variables to find the most significant variables. Using an significance level of 0.05, the following variables were deemed to be significant (P-Value &lt; Significance Level):</p>
+<p>Positive Coefficient of Regression</p>
+<ul>
+<li>Subtitle (y/n)</li>
+<li>In-app purchases ranging from $0 to $24.99</li>
+<li>Age Rating &lt; 12</li>
+<li>Size of game ranging from 46.5 MB to 112 MB</li>
+<li>Size of game ranging from 112 MB to 221 MB</li>
+<li>Size of game larger than 221 MB</li>
+<li>Genre: Magazines and Newspaper</li>
+</ul>
+<p>Negative Coefficient of Regression</p>
+<ul>
+<li>Age Rating &lt; 17</li>
+<li>Genre: Adventure</li>
+<li>Genre: Board</li>
+<li>Genre: Reference</li>
+<li>Days Since Last Update</li>
+</ul>
+<p>We can make a few observations from the information above:</p>
+<ul>
+<li>Include a subtitle (something like &ldquo;Original Brain Training&rdquo; for Sudoku)</li>
+<li>Include in-app purchases, but the price range for these items should be from $0 to $24.99</li>
+<li>Cater to wider varieties of audiences, ensure that your game is playable by younger audiences (4+, 9+ range)</li>
+<li>Make games more detailed/ more content/ better graphics- larger install sizes are positively correlated with better ratings</li>
+<li>Genres such as &ldquo;Magazines and Newspapers&rdquo; are generally higher rated</li>
+<li>Genres such as &ldquo;Adventure&rdquo; and &ldquo;Board&rdquo; are generally lower rated. This could be because personal tastes vary more drastically for apps/games of this category, and people could leave distasteful ratings if the game is not built perfectly to their liking or if the game is frustrating to play for a person of average/below average skill level.</li>
+<li>Apps that were updated the most recently had lower ratings in general. I am unable to generate any concrete conclusions from this information, however a possible hypothesis is that there has been a recent trend in the game development industry of adding features that users dislike, such as increased advertisements or expensive in-app purchases that increase the disparity between paying and non-paying users. It would have been interesting to do an analysis on how the frequency of updates impacts average ratings. However, there was insufficient data to do so.</li>
+</ul>
+<p>However, it is important to note that using only the aforementioned significant variables to test and train a multiple linear regression model resulted in an R-squared value of 0.1684 and a Mean Absolute Error of 0.367, which are not significant improvements, so the observations generated do not carry much weight.</p>
+<h2 id="thoughts-and-conclusions">Thoughts and Conclusions</h2>
+<p>In conclusion, it appears that multiple linear regression may not be a good model when modeling this scenario, though it is possible that it is hard to predict mobile game ratings to a high degree of accuracy in general as there is an element of randomness to ratings (hence the low R-squared value). Often times, people only rate the game when they have to and do not put much time or thought into it. Speaking from personal experience, I believe that people often make impulsive extreme ratings (ratings on the extreme of both the positive and negative ends of the grading scale) depending on their first impressions of the game, which skews the ratings and makes them harder to predict.</p>
+<p>An alternate possibility to the low R-squared value is that mobile game ratings are influenced by a myriad of other factors not included in the dataset, such as whether or not the game prompts the user to give it a review.</p>
+<p>Although the model had a low R-squared value, I believe that the mean absolute error of 0.37 is not all that bad because in my opinion, it still reasonably conveys public opinion on the game. I personally subconsciously round mobile game ratings to the nearest whole number to associate it with a word (very bad, bad, average, good, very good) when gauging the quality of the game, and an error of 0.37 means that I would still be rounding to the same number in most cases. However, I understand that this could be different for others and this model may not be useful to others when they gauge the quality of a game.</p>
+<p>From the game designer&rsquo;s point of view, when designing a game, it is important to keep the goals of designing the game in mind (to receive as high of a rating as possible, to reach as many people as possible, to generate as much revenue as possible, etc.). Hence, although it is never hurts to consider which factors positively or negatively impact game ratings (as stated in the &ldquo;Findings&rdquo; section), it is not the only thing to consider during game design.</p>
+<h2 id="limitations">Limitations</h2>
+<p>A few limitations of my model are:</p>
+<ul>
+<li>When counting the length of the game description, I noticed that some descriptions contained unicode for special characters such as emojis, and I was unable to find a way to exclude those from the count.</li>
+<li>I believe that there are more meaningful ways to categorize the in-app purchase prices, as from personal experience, certain price points are more common than others. For example, a majority of the games I have played in the past have only had in-app purchases worth $9.99 or less, so it might be beneficial to make a category from $0 to $9.99 instead of $0 to $24.99.</li>
+</ul>
+<h2 id="future-work">Future Work</h2>
+<ul>
+<li>Try to use different models to train and test the data (not just multiple linear regression)</li>
+<li>Potentially add different kinds of data (different columns) to the dataset</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-meta">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center text-md-left">
+          <ul class="post-meta-tags list-unstyled list-inline">
+            
+            <li class="list-inline-item"><a href="/tags/regression">Regression</a></li>
+            
+            <li class="list-inline-item"><a href="/tags/python">Python</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+<ul class="social-links has-bg-color list-unstyled list-inline" style="line-height:0">
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=%2fblog%2fprojects%2fapp-store-game-ratings%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-facebook-f text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=App%20Store%20Game%20Ratings&amp;url=%2fblog%2fprojects%2fapp-store-game-ratings%2f"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-twitter text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=%2fblog%2fprojects%2fapp-store-game-ratings%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-google-plus-g text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="mailto:?subject=App%20Store%20Game%20Ratings&amp;body=%2fblog%2fprojects%2fapp-store-game-ratings%2f" target="_self"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="las la-envelope text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="whatsapp://send?text=App%20Store%20Game%20Ratings%20%2fblog%2fprojects%2fapp-store-game-ratings%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-whatsapp text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+</ul></div>
+      </div>
+    </div>
+
+    <div class="single-post-author">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="media d-block d-sm-flex text-center text-sm-left">
+            
+            <a href="/author/ryan-wong/"><img loading="lazy" class="img-fluid rounded-circle mr-0 mr-sm-4 mb-4" src="/images/author/ryan_pro.jpg" alt="Ryan Wong"></a>
+            <div class="media-body">
+              <p class="font-primary mb-1">Written By</p>
+              <h4><a href="/author/ryan-wong/" class="text-dark font-weight-700">Ryan Wong</a></h4>
+              <p class="font-primary">I have experience working as a trader at Flow Traders and as a Data Scientist at Robinhood; In my free time you&rsquo;ll catch me playing sports, strategy games, or going down wikipedia rabbit holes.</p>
+              <ul class="social-links list-unstyled list-inline ml-0 ml-sm-n2">
+                
+                <li class="list-inline-item"><a href="https://github.com/ryanwonghc">
+                    <i class="lab la-github"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/ryan-wong-hc/">
+                    <i class="lab la-linkedin-in"></i>
+                  </a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-similer">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 class="text-dark font-weight-800 mb-4 pb-2">You May Also Like</h3>
+            </div>
+            
+              
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <a href="/blog/visualizations/fifa-playlist/">
+    <img loading="lazy" class="w-100 rounded" src="/images/post/fifa_playlist/preview.png" alt="FIFA Playlist Analysis">
+  </a>
+  
+  <div class="card-body">
+    <ul class="card-meta list-inline mb-2">
+      <li class="list-inline-item mb-2">
+        
+        <a href="/author/ryan-wong/" class="card-meta-author">
+          
+          <img loading="lazy" src="/images/author/ryan_pro.jpg" alt="Ryan Wong">
+          
+          <span>Ryan Wong</span>
+        </a>
+        
+      </li>
+      <li class="list-inline-item mb-2">
+        <span>01 Oct, 2023</span>
+      </li>
+      <li class="list-inline-item mb-2">
+        <ul class="card-meta-tag list-inline">
+          
+          <li class="list-inline-item"><a href="/tags/visualization">Visualization</a></li>
+          
+          <li class="list-inline-item"><a href="/tags/python">Python</a></li>
+          
+          <li class="list-inline-item"><a href="/tags/spotipy">Spotipy</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="/blog/visualizations/fifa-playlist/">FIFA Playlist Analysis</a>
+    </h3>
+    <p>Overview Link to Github Repository
+From Bakermat to John Newman, EA Sport&amp;rsquo;s FIFA games have introduced me to countless new artists and iconic …</p>
+
+    
+  </div>
+</article>
+            </div>
+            
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <a href="/blog/projects/premier-league-game-recommender/">
+    <img loading="lazy" class="w-100 rounded" src="/images/post/premier_league/preview.jpg" alt="Premier League Game Recommender">
+  </a>
+  
+  <div class="card-body">
+    <ul class="card-meta list-inline mb-2">
+      <li class="list-inline-item mb-2">
+        
+        <a href="/author/ryan-wong/" class="card-meta-author">
+          
+          <img loading="lazy" src="/images/author/ryan_pro.jpg" alt="Ryan Wong">
+          
+          <span>Ryan Wong</span>
+        </a>
+        
+      </li>
+      <li class="list-inline-item mb-2">
+        <span>14 Jul, 2022</span>
+      </li>
+      <li class="list-inline-item mb-2">
+        <ul class="card-meta-tag list-inline">
+          
+          <li class="list-inline-item"><a href="/tags/classification">Classification</a></li>
+          
+          <li class="list-inline-item"><a href="/tags/python">Python</a></li>
+          
+          <li class="list-inline-item"><a href="/tags/web-scraping">Web Scraping</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="/blog/projects/premier-league-game-recommender/">Premier League Game Recommender</a>
+    </h3>
+    <p>Project aims to explore what factors makes a Premier League game is memorable/worth watching and generate a list of recommended Premier League games …</p>
+
+    
+  </div>
+</article>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <footer class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-5">
+        
+        
+        
+      </div>
+      <div class="col-lg-12 text-center mt-5">
+        <ul class="list-inline footer-menu mb-4">
+          
+          <li class="list-inline-item mx-3"><a href="/about/">About</a></li>
+          
+          <li class="list-inline-item mx-3"><a href="/contact/">Contact</a></li>
+          
+        </ul>
+        <ul class="social-links icon-box list-unstyled list-inline font-weight-500 mb-3">
+          
+          <li class="list-inline-item text-center"><a href="https://github.com/ryanwonghc" aria-label="social-icon">
+            <i class="lab lab la-github"></i>
+          </a></li>
+          
+          <li class="list-inline-item text-center"><a href="https://www.linkedin.com/in/ryan-wong-hc" aria-label="social-icon">
+            <i class="lab lab la-linkedin-in"></i>
+          </a></li>
+          
+        </ul>
+        
+        <p class="mb-0 font-weight-500 copyright-text content">© Ryan Wong 2023. All Rights Reserved.</p>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+<script data-turbolinks-suppress-warning src="/js/vendor.min.1ea267328e87227390a6d4fe5c02e03b03282bccff47e11f3cb69cd2ff4433cad16d6ec4fd9b9fbcfb65807d1c51e86606ee845d59fe3621ae46be5ac883d2a5.js" integrity="sha512-HqJnMo6HInOQptT&#43;XALgOwMoK8z/R&#43;EfPLac0v9EM8rRbW7E/ZufvPtlgH0cUehmBu6EXVn&#43;NiGuRr5ayIPSpQ=="></script>
+
+
+
+</body>
+
+</html>

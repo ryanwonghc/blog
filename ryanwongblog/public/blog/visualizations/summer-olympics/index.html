@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Summer Olympics</title>
+
+  <meta name="author" content="Themefisher">
+  <meta name="description" content=" Data exploration and visualizations with summer olympics data. ">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+
+  <!-- CSS Plugins -->
+  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&amp;display=swap">
+
+
+
+
+<link rel="stylesheet" href="/css/vendor.min.f38e7c7e6ab34c94774fb608f1bb6b5912854002ca41fa9c63fd334fcddbd97e26be4783c0f6fd40b8fc78776c7169352bbc43ccfa6f56de22009e059d7401e1.css" integrity="sha512-8458fmqzTJR3T7YI8btrWRKFQALKQfqcY/0zT83b2X4mvkeDwPb9QLj8eHdscWk1K7xDzPpvVt4iAJ4FnXQB4Q==" media="screen">
+
+</head>
+
+<body>
+  
+  <div class="header-height-fix"></div>
+<header class="header-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+          <a class="navbar-brand font-weight-bold mr-0" href="/">
+            
+            <img loading="lazy" src="/images/logo.png" alt="Ryan Wong" height="35px">
+            
+          </a>
+
+          
+          <button class="search-toggle d-inline-block d-lg-none ml-auto mr-3" data-toggle="search" aria-label="Search Toggle">
+            <i class="las la-search"></i>
+          </button>
+          
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navHeader" aria-controls="navHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="d-inline lab la-buromobelexperte"></i>
+            <i class="d-none las la-times"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navHeader">
+            <ul class="navbar-nav mx-auto">
+
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/projects">Projects</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/visualizations">Visualizations</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              
+              
+            </ul>
+            
+            
+            <div class="navbar-right d-none d-lg-inline-block">
+              <ul class="social-links list-unstyled list-inline">
+                <li class="list-inline-item ml-4 d-none d-lg-inline-block">
+                  <button class="search-toggle" data-toggle="search" aria-label="Search Toggle">
+                    <i class="las la-search"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="search-block">
+  <div data-toggle="search-close">
+    <i class="las la-times text-primary"></i>
+  </div>
+  <form action="/search">
+    <input id="search-query" name="s" type="search" placeholder="Type words &amp; hit enter" class="text-center" aria-label="search-query">
+  </form>
+</div>
+
+  
+  
+
+
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="text-center mb-5">
+          <h3 class="h2 mb-4 post-title">Summer Olympics</h3>
+          <ul class="card-meta list-inline">
+            <li class="list-inline-item">
+              <a href="#!" class="card-meta-author">
+                
+                <a href="/author/ryan-wong/" class="card-meta-author">
+                  <img loading="lazy" src="/images/author/ryan_pro.jpg" alt="Ryan Wong">
+                  <span>Ryan Wong</span>
+                </a>
+                
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">
+              <span>13 October 2021</span>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="mb-5 text-center">
+          <img loading="lazy" class="img-fluid rounded" src="/images/post/summer_olympics/preview.jpg" alt="Image not Found">
+        </div>
+        
+
+        <div class="content">
+          <p>This post seeks to explore and visualize trends with summer olympics data.
+ 
+<a href="https://github.com/ryanwonghc/summer-olympics-viz">Link to Github Repository</a></p>
+<h4 id="1-what-proportion-of-the-years-gold-medals-did-the-winning-country-win">1. What proportion of the years gold medals did the winning country win?</h4>
+<p align="center">
+  <img src="/images/post/summer_olympics/proportion_gold_winner.jpg"/>
+</p>
+Apart from 1904 which was a huge outlier (USA won 78% of the available gold medals), the winner of each olympics typically win about 20-40% of the available gold medals (mean: 26.76%). There is a slight downward trend in the proportion of gold medals won by the winning country which suggests that the competition to win gold medals is becoming more and more intense. 
+<p> 
+ </p>
+<p>To dive deeper into causes of USA dominance in 1904:
+ 
+There were only 12 nations competing in the 1904 olympics. Furthermore, the US had 5x more athletes than all the other nations combined (523 of the 630 athletes represented the US).
+ </p>
+<p><strong>Why did so few countries countries send athletes to the olympics?</strong>
+ 
+ 
+This was only the third modern olympics, so there were not too many countries participating/invited to begin with (21 nations participated in the prior Olympics). This was also the first olympics hosted out of Europe (most countries participating in the early olympics were European countries), and St. Louis was a less than ideal location to host it (it was originally planned for Chicago; previous host cities were Athens and Paris), further contributing to the low number of visiting countries.</p>
+<h4 id="2-what-proportion-of-the-years-gold-medals-did-the-top-3-countries-win-relative-to-each-other-and-the-rest-of-the-competition">2. What proportion of the years gold medals did the top 3 countries win relative to each other and the rest of the competition?</h4>
+<p align="center">
+  <img src="/images/post/summer_olympics/proportion_gold_top3.jpg"/>
+</p>
+<p>Throughout the course of the olympics, on average, the top 3 nations win more medals than the rest of the competition combined. This data however is skewed by the earlier years of the competition where the winners were often much more dominant than the rest of the competition. If we only look at data from the last 10 olympics, we see that the top 3 nations win ~40% of the gold medals.</p>
+<p align="center">
+  <img src="/images/post/summer_olympics/proportion_gold_top3_last10.jpg"/>
+</p>
+<p>Looking at the number of medals won (gold, silver, bronze) we see the other countries make up an event larger proportion of the total.</p>
+<p align="center">
+  <img src="/images/post/summer_olympics/proportion_medals_top3_last10.jpg"/>
+</p>
+<h4 id="further-exploration">Further Exploration</h4>
+<p>This article will be continuously updated with new content. In the future, I would like to test the following hypotheses:</p>
+<ul>
+<li>The more economically developed a country is, the higher the probability of them being competitive in the olympics (winning more medals)
+<ul>
+<li>people in economically developed countries have greater freedom to pursue and focus on sport. They also have more resources to train with. Economically developed countries can send more athletes to the games (more athletes qualify) and the athletes have bigger odds of winning their event.</li>
+</ul>
+</li>
+<li>The host country performs better at each olympics
+<ul>
+<li>The host country can add sports to the list of events, and they can add events that they are good at</li>
+<li>The home country&rsquo;s athletes will generally have the most supporters cheering for them at each event (harder for people to travel to support their country)</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-meta">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center text-md-left">
+          <ul class="post-meta-tags list-unstyled list-inline">
+            
+            <li class="list-inline-item"><a href="/tags/visualization">Visualization</a></li>
+            
+            <li class="list-inline-item"><a href="/tags/python">Python</a></li>
+            
+            <li class="list-inline-item"><a href="/tags/web-scraping">Web Scraping</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+<ul class="social-links has-bg-color list-unstyled list-inline" style="line-height:0">
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=%2fblog%2fvisualizations%2fsummer-olympics%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-facebook-f text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=Summer%20Olympics&amp;url=%2fblog%2fvisualizations%2fsummer-olympics%2f"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-twitter text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=%2fblog%2fvisualizations%2fsummer-olympics%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-google-plus-g text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="mailto:?subject=Summer%20Olympics&amp;body=%2fblog%2fvisualizations%2fsummer-olympics%2f" target="_self"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="las la-envelope text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="whatsapp://send?text=Summer%20Olympics%20%2fblog%2fvisualizations%2fsummer-olympics%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-whatsapp text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+</ul></div>
+      </div>
+    </div>
+
+    <div class="single-post-author">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="media d-block d-sm-flex text-center text-sm-left">
+            
+            <a href="/author/ryan-wong/"><img loading="lazy" class="img-fluid rounded-circle mr-0 mr-sm-4 mb-4" src="/images/author/ryan_pro.jpg" alt="Ryan Wong"></a>
+            <div class="media-body">
+              <p class="font-primary mb-1">Written By</p>
+              <h4><a href="/author/ryan-wong/" class="text-dark font-weight-700">Ryan Wong</a></h4>
+              <p class="font-primary">I have experience working as a trader at Flow Traders and as a Data Scientist at Robinhood; In my free time you&rsquo;ll catch me playing sports, strategy games, or going down wikipedia rabbit holes.</p>
+              <ul class="social-links list-unstyled list-inline ml-0 ml-sm-n2">
+                
+                <li class="list-inline-item"><a href="https://github.com/ryanwonghc">
+                    <i class="lab la-github"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/ryan-wong-hc/">
+                    <i class="lab la-linkedin-in"></i>
+                  </a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-similer">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 class="text-dark font-weight-800 mb-4 pb-2">You May Also Like</h3>
+            </div>
+            
+              
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <a href="/blog/projects/app-store-game-ratings/">
+    <img loading="lazy" class="w-100 rounded" src="/images/post/app_store_rating/preview.jpg" alt="App Store Game Ratings">
+  </a>
+  
+  <div class="card-body">
+    <ul class="card-meta list-inline mb-2">
+      <li class="list-inline-item mb-2">
+        
+        <a href="/author/ryan-wong/" class="card-meta-author">
+          
+          <img loading="lazy" src="/images/author/ryan_pro.jpg" alt="Ryan Wong">
+          
+          <span>Ryan Wong</span>
+        </a>
+        
+      </li>
+      <li class="list-inline-item mb-2">
+        <span>20 Apr, 2020</span>
+      </li>
+      <li class="list-inline-item mb-2">
+        <ul class="card-meta-tag list-inline">
+          
+          <li class="list-inline-item"><a href="/tags/regression">Regression</a></li>
+          
+          <li class="list-inline-item"><a href="/tags/python">Python</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="/blog/projects/app-store-game-ratings/">App Store Game Ratings</a>
+    </h3>
+    <p>Project aims to predict the app store rating of a mobile game using linear regression, considering factors such as game size, genre, and price.
+Link …</p>
+
+    
+  </div>
+</article>
+            </div>
+            
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <a href="/blog/visualizations/fifa-playlist/">
+    <img loading="lazy" class="w-100 rounded" src="/images/post/fifa_playlist/preview.png" alt="FIFA Playlist Analysis">
+  </a>
+  
+  <div class="card-body">
+    <ul class="card-meta list-inline mb-2">
+      <li class="list-inline-item mb-2">
+        
+        <a href="/author/ryan-wong/" class="card-meta-author">
+          
+          <img loading="lazy" src="/images/author/ryan_pro.jpg" alt="Ryan Wong">
+          
+          <span>Ryan Wong</span>
+        </a>
+        
+      </li>
+      <li class="list-inline-item mb-2">
+        <span>01 Oct, 2023</span>
+      </li>
+      <li class="list-inline-item mb-2">
+        <ul class="card-meta-tag list-inline">
+          
+          <li class="list-inline-item"><a href="/tags/visualization">Visualization</a></li>
+          
+          <li class="list-inline-item"><a href="/tags/python">Python</a></li>
+          
+          <li class="list-inline-item"><a href="/tags/spotipy">Spotipy</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="/blog/visualizations/fifa-playlist/">FIFA Playlist Analysis</a>
+    </h3>
+    <p>Overview Link to Github Repository
+From Bakermat to John Newman, EA Sport&amp;rsquo;s FIFA games have introduced me to countless new artists and iconic …</p>
+
+    
+  </div>
+</article>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <footer class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-5">
+        
+        
+        
+      </div>
+      <div class="col-lg-12 text-center mt-5">
+        <ul class="list-inline footer-menu mb-4">
+          
+          <li class="list-inline-item mx-3"><a href="/about/">About</a></li>
+          
+          <li class="list-inline-item mx-3"><a href="/contact/">Contact</a></li>
+          
+        </ul>
+        <ul class="social-links icon-box list-unstyled list-inline font-weight-500 mb-3">
+          
+          <li class="list-inline-item text-center"><a href="https://github.com/ryanwonghc" aria-label="social-icon">
+            <i class="lab lab la-github"></i>
+          </a></li>
+          
+          <li class="list-inline-item text-center"><a href="https://www.linkedin.com/in/ryan-wong-hc" aria-label="social-icon">
+            <i class="lab lab la-linkedin-in"></i>
+          </a></li>
+          
+        </ul>
+        
+        <p class="mb-0 font-weight-500 copyright-text content">© Ryan Wong 2023. All Rights Reserved.</p>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+<script data-turbolinks-suppress-warning src="/js/vendor.min.1ea267328e87227390a6d4fe5c02e03b03282bccff47e11f3cb69cd2ff4433cad16d6ec4fd9b9fbcfb65807d1c51e86606ee845d59fe3621ae46be5ac883d2a5.js" integrity="sha512-HqJnMo6HInOQptT&#43;XALgOwMoK8z/R&#43;EfPLac0v9EM8rRbW7E/ZufvPtlgH0cUehmBu6EXVn&#43;NiGuRr5ayIPSpQ=="></script>
+
+
+
+</body>
+
+</html>

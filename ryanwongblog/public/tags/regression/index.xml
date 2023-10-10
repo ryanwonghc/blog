@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regression on Ryan Wong</title>
+    <link>/tags/regression/</link>
+    <description>Recent content in Regression on Ryan Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>App Store Game Ratings</title>
+      <link>/blog/projects/app-store-game-ratings/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/projects/app-store-game-ratings/</guid>
+      <description>Project aims to predict the app store rating of a mobile game using linear regression, considering factors such as game size, genre, and price.</description>
+    </item>
+    
+  </channel>
+</rss>

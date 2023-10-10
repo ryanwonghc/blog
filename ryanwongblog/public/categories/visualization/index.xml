@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualization on Ryan Wong</title>
+    <link>/categories/visualization/</link>
+    <description>Recent content in Visualization on Ryan Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FIFA Playlist Analysis</title>
+      <link>/blog/visualizations/fifa-playlist/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/visualizations/fifa-playlist/</guid>
+      <description>Overview Link to Github Repository</description>
+    </item>
+    
+    <item>
+      <title>Summer Olympics</title>
+      <link>/blog/visualizations/summer-olympics/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/visualizations/summer-olympics/</guid>
+      <description>This post seeks to explore and visualize trends with summer olympics data.</description>
+    </item>
+    
+  </channel>
+</rss>

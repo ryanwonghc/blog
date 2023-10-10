@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Author on Ryan Wong</title>
+    <link>/author/</link>
+    <description>Recent content in Author on Ryan Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 26 Jan 2021 10:13:00 +0600</lastBuildDate><atom:link href="/author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ryan Wong</title>
+      <link>/author/ryan-wong/</link>
+      <pubDate>Tue, 02 Feb 2021 10:20:19 +0600</pubDate>
+      
+      <guid>/author/ryan-wong/</guid>
+      <description>I have experience working as a trader at Flow Traders and as a Data Scientist at Robinhood; In my free time you&amp;rsquo;ll catch me playing sports, strategy games, or going down wikipedia rabbit holes.</description>
+    </item>
+    
+  </channel>
+</rss>

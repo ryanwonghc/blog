@@ -35,7 +35,7 @@
           {{end}}
         </ul>
         {{ with site.Params.copyright }}
-        <p class="mb-0 font-weight-500 copyright-text content">{{ replace . {year} now.Year| markdownify}}</p>
+        <p class="mb-0 font-weight-500 copyright-text content">{{ replace . "{year}" now.Year | markdownify}}</p>
         {{ end }}
       </div>
     </div>

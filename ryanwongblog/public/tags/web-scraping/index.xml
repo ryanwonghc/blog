@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Scraping on Ryan Wong</title>
+    <link>/tags/web-scraping/</link>
+    <description>Recent content in Web Scraping on Ryan Wong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Premier League Game Recommender</title>
+      <link>/blog/projects/premier-league-game-recommender/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/projects/premier-league-game-recommender/</guid>
+      <description>Project aims to explore what factors makes a Premier League game is memorable/worth watching and generate a list of recommended Premier League games to watch.</description>
+    </item>
+    
+    <item>
+      <title>Summer Olympics</title>
+      <link>/blog/visualizations/summer-olympics/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/visualizations/summer-olympics/</guid>
+      <description>This post seeks to explore and visualize trends with summer olympics data.</description>
+    </item>
+    
+  </channel>
+</rss>
