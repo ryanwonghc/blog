@@ -33,7 +33,7 @@ I used [Spotipy](https://spotipy.readthedocs.io/en/2.22.1/) to access Spotify da
 
 #### Song Genre Data
 <p align="center">
-    <img src="images/post/fifa_playlist/wordcloud.png"><br>
+    <img src="/images/post/fifa_playlist/wordcloud.png"><br>
     <i>Most Frequent Song Genres In FIFA Playlists</i>
 </p>
 FIFA playlists contain songs across a diverse set of genres but a few genres stand out in particular as a popular choice for EA Sport's picks:
@@ -46,11 +46,11 @@ Indie, dance, alternative, modern, and rock are also popular keywords. Additiona
 
 2014 | 2015 | 2016 | 2017 | 2018
 :-------------------------:|:-------------------------:|:---------------------:|:---------------------:|:---------------------:
-![2014](images/post/fifa_playlist/2014_wordcloud.png)  |  ![2015](images/post/fifa_playlist/2015_wordcloud.png) | ![2016](images/post/fifa_playlist/2016_wordcloud.png) | ![2017](images/post/fifa_playlist/2017_wordcloud.png) | ![2018](images/post/fifa_playlist/2018_wordcloud.png)
+![2014](/images/post/fifa_playlist/2014_wordcloud.png)  |  ![2015](/images/post/fifa_playlist/2015_wordcloud.png) | ![2016](/images/post/fifa_playlist/2016_wordcloud.png) | ![2017](/images/post/fifa_playlist/2017_wordcloud.png) | ![2018](/images/post/fifa_playlist/2018_wordcloud.png)
 
 2019 | 2020 | 2021 | 2022 | 2023
 :-------------------------:|:-------------------------:|:---------------------:|:---------------------:|:---------------------:
-![2019](images/post/fifa_playlist/2019_wordcloud.png)  |  ![2020](images/post/fifa_playlist/2020_wordcloud.png) | ![2021](images/post/fifa_playlist/2021_wordcloud.png) | ![2022](images/post/fifa_playlist/2022_wordcloud.png) | ![2023](images/post/fifa_playlist/2023_wordcloud.png)
+![2019](/images/post/fifa_playlist/2019_wordcloud.png)  |  ![2020](/images/post/fifa_playlist/2020_wordcloud.png) | ![2021](/images/post/fifa_playlist/2021_wordcloud.png) | ![2022](/images/post/fifa_playlist/2022_wordcloud.png) | ![2023](/images/post/fifa_playlist/2023_wordcloud.png)
 <p align="center">
     <i>Wordclouds of the Most Frequent Song Genres Each Year</i>
 </p>
@@ -66,25 +66,25 @@ Taking a closer look at how genre choices have changed over time, we arrive at s
 Due to the abundance of new music every year and the propensity of FIFA playlists to reflect the most current musical trends, it would make sense that FIFA playlists each year are curated with songs released within the past year. This is evidenced in the chart below- at least 75% of the songs picked in each year's playlist were released within 1 year of the playlist compilation date.
 
 <p align="center">
-    <img src="images/post/fifa_playlist/release_vs_compilation_date_ex_outliers.png"><br>
+    <img src="/images/post/fifa_playlist/release_vs_compilation_date_ex_outliers.png"><br>
 </p>
 
 The chart assumes that the playlist for each year was compiled on the first day of the year (eg. 2014-01-01). There are several negative numbers here, which is due to instances of the song being released prior to the album it is on (and it was assumed that the song and album release day are the same). The median time elapsed hovers consistently at around 200 days prior to playlist release. 2023's playlist had a median time elapsed of 268 days, which is significantly higher than the 200 days mark from previous years. This however may be due to the fact that the 2023 playlist was much larger than recent years (81 songs compared to 30-40 songs in years prior). As a result, EA Sports may have felt that it was appropriate to add more "throwback" songs on top of the songs from 2023. EA Sports also released a [World Cup playlist](https://www.theloadout.com/fifa-23/world-cup-mode-soundtrack) for FIFA 2023 which contained songs from prior playlists, which could suggest an emphasis on nostalgia and older songs.
 
 <p align="center">
-    <img src="images/post/fifa_playlist/line_song_dur.png"><br>
+    <img src="/images/post/fifa_playlist/line_song_dur.png"><br>
 </p>
 
 In the above chart, the bands represent 1 standard deviation. There seems to be a wide range of song lengths, but most are 2.5 to 5 minutes long, which reflects the average song length in general. The average song length seems to be trending slightly downwards, but that could just be reflective of [overall industry trends](https://www.vice.com/en/article/qjv8pq/pop-songs-shorter-than-ever).
 
 <p align="center">
-    <img src="images/post/fifa_playlist/explicit.png"><br>
+    <img src="/images/post/fifa_playlist/explicit.png"><br>
 </p>
 
 Given that FIFA games are rated E for Everyone, it may be the case the playlist avoids explicit songs. This was definitely the case in 2014, with only 1 song being marked as explicit. However, though still a minority, the number of explicit songs as well as the proportion of songs in the playlist has been trending upwards. At the peak in 2022, a third of the playlist's songs were marked as explicit. 
 
 <p align="center">
-    <img src="images/post/fifa_playlist/popularity2.png"><br>
+    <img src="/images/post/fifa_playlist/popularity2.png"><br>
 </p>
 
 I was hesitant to read too deeply into popularity scores because I suspect that a song's placement in the FIFA playlist heavily impacts its popularity score by increasing listenership. In the chart above, I plotted each song's popularity against its album popularity score. Points above the dotted line indicate that the album is more popular than the song, which would suggest that there are more popular tracks on the album (ie. the song was not the most popular song on the album). In the chart, we see there are more points under the line (48% under line, 20% over line), meaning that songs in FIFA playlists typically are the most popular songs in its album. 
@@ -94,7 +94,7 @@ We see that on average, points above the line are farther away from the line tha
 About 30% of songs have a popularity of 0. Since recent plays weigh more in Spotify's popularity scoring algorithm, This suggests that they haven't been played recently. The percentage of songs with a popularity score of 0 each year is illustrated in the chart below:
 
 <p align="center">
-    <img src="images/post/fifa_playlist/popularity0.png"><br>
+    <img src="/images/post/fifa_playlist/popularity0.png"><br>
 </p>
 
 This suggests that on average, the older the songs are, the less popular they get, which makes sense. However, it is surprising that the percentage isn't higher for the older playlists: except for 2014 (51% 0 popularity), a majority of each year's playlists have a non-zero popularity score. Whether or not the FIFA game is responsible for the sustained plays is unclear.
@@ -105,7 +105,7 @@ This suggests that on average, the older the songs are, the less popular they ge
 I elected to look at artist follower count over artist popularity score to determine artist popularity because I am making the assumption that people only choose to follow an artist if they are interested in their music. In contrast, since the artist's popularity score is calculated using the popularity scores of their music, an artist's popularity score can be temporarily inflated by their song being selected to appear in the FIFA playlist as it will receive more plays. 
 
 <p align="center">
-    <img src="images/post/fifa_playlist/artist_followers_bar.png"><br>
+    <img src="/images/post/fifa_playlist/artist_followers_bar.png"><br>
     <i>Artist Follower Count Distribution (Logarithmic Scale)</i>
 </p>
 
@@ -114,7 +114,7 @@ In the above chart, we see that in the earlier years (2014-2018), distribution o
 According to [Chartmasters](https://chartmasters.org/spotify-most-followed-artists/), the 100th most followed artist on Spotify is 2pac with a follower count of 16,362,807. Given that FIFA is such a mainstream game, I assumed they would pick mainstream music. However, top 100 artists only make up 1.5% of the playlist. Going a step down, artists with 1M+ followers only make up 25% of the playlist (75th percentile). This is illustrated in the chart below:
 
 <p align="center">
-    <img src="images/post/fifa_playlist/artist_followers_step.png"><br>
+    <img src="/images/post/fifa_playlist/artist_followers_step.png"><br>
 </p>
 
 From the chart, we can also see the 25th percentile for follower count is around 50,000.
@@ -124,14 +124,14 @@ From the chart, we can also see the 25th percentile for follower count is around
 Spotify's audio data consists of 12 different audio features measuring factors such as a song's energy, instrumentalness, and key. See Spotify's [API reference page](https://developer.spotify.com/documentation/web-api/reference/get-audio-features) for how to interpret audio data. I used the findings in [this website](https://dkhurjekar.shinyapps.io/spotify/) and correlated [article]((https://dhruv-khurjekar.medium.com/investigating-spotifys-danceability-index-other-song-attributes-1983142f7dfd)), which contained analyses on the distributions of each of the audio features, to serve as a baseline to compare FIFA playlist audio features to.  
 
 <p align="center">
-    <img src="images/post/fifa_playlist/audio_radar.png"><br>
+    <img src="/images/post/fifa_playlist/audio_radar.png"><br>
 </p>
 
 
 In the chart above, we can see that over the years, FIFA is fairly consistent with song selection. There isn't too much deviation in most features- the biggest variations I can see are in mode, danceability, and energy. The following charts allow us to get a clearer understanding of how FIFA's selection of songs evolve over time.
 
 <p align="center">
-    <img src="images/post/fifa_playlist/audio_line.png"><br>
+    <img src="/images/post/fifa_playlist/audio_line.png"><br>
 </p>
 
 **Mode**
@@ -158,12 +158,12 @@ Instrumentalness represents how music heavy (or vocal-less) a track is. At first
 
 **Key**
 <p align="center">
-    <img src="images/post/fifa_playlist/key_bar.png"><br>
+    <img src="/images/post/fifa_playlist/key_bar.png"><br>
 </p>
 Key represents the key a track is in, which consists of notes from A to G. Data about the song's key was not included in the charts above because it is categorical data that cannot be interpreted via averages. In the bar chart above, we see that the natural keys (not sharps or flats) are more prominently featured in the playlist. This reflects musical trends, according to this [website](https://www.hooktheory.com/cheat-sheet/key-popularity). "C","D", "A", and "G" are the most popular keys to write songs in- more than a third of all songs are written in these keys.
 
 <p align="center">
-    <img src="images/post/fifa_playlist/key_line_reg.png">
+    <img src="/images/post/fifa_playlist/key_line_reg.png">
 </p>
 
 The chart above illustrates what proportion of the playlist each year was written in each key. These lines are all lines of best fit, to illustrate the trend of key usage over time rather than to identify the exact proportions for each year. From the chart, we see that the "G" key has halved in prominence. Interestingly, while "C", "D", "A", and "G" are the most widely used keys in absolute terms, they are not the most commonly used in proportional terms. The period between 2018 and 2020 seemed to have the most even distribution in terms of key selection, especially if you ignore D#/Eb which has consistently low usage.
